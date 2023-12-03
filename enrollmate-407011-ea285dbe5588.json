@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "enrollmate-407011",
+  "private_key_id": "ea285dbe5588f5944ab7038117bcb69b90248111",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDymGOaeeJbCVyx\naprPN758V0Gl8xKw/r/ZcYf4CNEKNbNuyF8hdjmC6/SDFk52i1jOS6blI/9kj+r0\nSuUmLDRPbQKJGwYBCEiVgga41VtyRpYVoRzC2dLw5mh2UOH+UViuGB6PjUW3YTkG\niYeF0wjFsLglRv1Q0aor6wR66ItvxAqTaySszzTkdrhBUr01eN2plWhWKTbZPCEX\nrrOhcgeOPRuVgGKwyRK2BTaIOWc3hVhq0Ire3002kFStLGsBVZ0NsZAmMwKQHoT9\n7cOvCStO1fPRIz6m6q6DD8wSuSNA+dALIvNEf7N/ublsAsR74pK3s18N8avgrtBk\nbT1b3clHAgMBAAECggEAHfJuN+y8OBpnl7vTYNQpTsZ4uKh70gnzRepBa37Zy0Ww\ny51ZklMQAMI+8gsIDuiJwxb3WHRWpnkrpbzfHRS6NQ8oZSNxsiFDJeL3ZcwUw1PF\nBZDYxjxHJsIn+r8Q/tOCO8+HakIkF+HyZ6+vi/durvTEmU7HnjlGUAXtjNH1xeCI\nb1Vk4B38GQtkChqJtw3tOM+GcGxX31CEAlNNrXqYa5V6x4NjPTj4BjpSIu+XVgJz\ntluG/quVs/pogjGPN0qXk7/KZfQBtvBe2VQGSbePi1J3tRxV1/PIKxEfhfo56/m1\n4bXf/8U+qYAI0vdg5BUtp2fL4nCsla3S351GB6MEEQKBgQD5VD1KiDMdoMCeJyr5\nk25ezBJT3W3RQZaz9h7UnjZ4n1COzZM588AUnV1vSAbXXjooO1xbEJRJtZF8nTTw\nnyiAknKoEKaDOj+wIyRXljJz6SN/MwxeqQpShV/m6zw0E53DCceMM+/1DIv/8Gf/\nNI+44yOkUSQmb+HKboo7rgrL0QKBgQD5Fgbt8NsuUNVIqQcj7msVW9yEbBIuEFe/\nWHbAYit98hjH9v2YW1sm6PaUcHJIc/O4DrIFxEPMOJDLSoKRvFmbIOBiGpE6YYnz\nGXHUbDv7kOaDYG5RSswkBMbKoPAXyPjdLHEf2MLjExppbi5u/mIuDT3VIZG4RQ/m\nXH2uEyfBlwKBgDukQAkdLYUP2CO84NXUw5kfnd674DInS2J/JH7d3c/a5E1Utbwu\nJ6uGvTwKccCBBM5s7LnH7ID5UvUJMgnBONIQtian3P0VKPj8XwwonKcHhPs/fd0C\n+Lomt3somD0o2Bs4sqhCIEtxFehCXM46h4rFotgCpPAg4VUoPh7qkiCRAoGBAMoV\nNtYAXLJ83i0vBR3/pl0TxBqjWzSICcixytZWTxbFPZmuJxxesdslkjfn6rAhco/X\nTFMlYiPjmIV2E+yMtN4IlELDbyPAUp0p/ZHrpdZ5PqtDpvzJBEoMngNzApcpc85s\n6fJ+d86mhv0WaRGfzKO0FoA91e18CmRIkaaS3+RNAoGAWCot+H8XfpvOatuGikNG\noMfcMxno2z48OilMS8PYCzBXAreq7Q+BeAwRqr8oI9K8viXcM2QTSYj+eWiGd8Af\nlsLmX/miCU0dlS6/xQnTxrm50Dkjtlk1/8znIOETB1pE0YYVhL8FHY1O9suixUkM\nJj+2/VfSnd8Zggvi7xogNzA=\n-----END PRIVATE KEY-----\n",
+  "client_email": "enroll-mate@enrollmate-407011.iam.gserviceaccount.com",
+  "client_id": "101972694203847147572",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/enroll-mate%40enrollmate-407011.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
