@@ -1,5 +1,7 @@
 require("dotenv").config();
 const morgan = require("morgan");
+const uuid = require("uuid");
+const connectDB = require("./config/mongo");
 
 const express = require("express");
 const app = express();
@@ -7,7 +9,7 @@ const cors = require("cors");
 
 const dialogflow = require("dialogflow");
 
-const uuid = require("uuid");
+connectDB();
 
 const PORT = process.env.PORT || 7000;
 
@@ -58,6 +60,8 @@ async function runSample(query) {
   }
 }
 
+
+
 app.get("/", async (req, res) => {
   //   const { query } = req.query;
   try {
@@ -68,6 +72,8 @@ app.get("/", async (req, res) => {
     return res.status(500).json({ message: "Server error", error });
   }
 });
+
+app.use("/mailer", require('./mailer/mailer'))
 
 app.post("/reply", async (req, res) => {
   try {
