@@ -74,6 +74,7 @@ app.get("/", async (req, res) => {
 });
 
 app.use("/mailer", require('./mailer/mailer'))
+app.use("/user", require('./auth/register'))
 
 app.post("/reply", async (req, res) => {
   try {
