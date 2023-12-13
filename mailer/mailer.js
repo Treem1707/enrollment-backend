@@ -1,10 +1,21 @@
 const express = require("express");
 const router = express.Router();
-const nodemailer = require('nodemailer')
+const nodemailer = require("nodemailer");
+
+// regular express to verify email format
+const emailRegexp = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
 
 router.post("/send-mail", async (req, res, next) => {
   try {
     const { to, text, from, name } = req.body;
+
+    if (!email) {
+      return res.status(401).send({ message: "Please enter an email" });
+    }
+
+    if (!emailRegexp.test(from)) {
+      return res.status(401).send({ message: "Please enter a valid email" });
+    }
 
     const transporter = nodemailer.createTransport({
       service: "gmail",
