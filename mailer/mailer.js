@@ -51,4 +51,41 @@ router.post("/send-mail", async (req, res, next) => {
   }
 });
 
+router.post("/subscribe", async (req, res, next) => {
+  const { to } = req.body;
+  try {
+    if (!to) {
+      return res.status(401).send({ message: "Please enter an email" });
+    }
+
+    if (!emailRegexp.test(to)) {
+      return res.status(401).send({ message: "Please enter a valid email" });
+    }
+
+    const transporter = nodemailer.createTransport({
+      service: "gmail",
+      auth: {
+        user: "tanakarnld@gmail.com",
+        pass: "sppg araf lsjc mvjc",
+      },
+    });
+
+    const mailOptions = {
+      from: "tanakarnld@gmail.com",
+      to: to,
+      subject: "subscription",
+      text: "Thank you for subscribing to our newsletter",
+    };
+
+    transporter.sendMail(mailOptions, (error, info) => {
+      if (error) {
+        return res.status(500).send(error.toString());
+      }
+      res.status(200).send("Email sent: " + info.response);
+    });
+  } catch (error) {
+    next(error);
+  }
+});
+
 module.exports = router;
