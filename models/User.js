@@ -19,7 +19,7 @@ const userSchema = new mongoose.Schema(
     password: {
       type: String,
     },
-    what_you_applying_for: {
+    email: {
       type: String,
     },
     docs: {

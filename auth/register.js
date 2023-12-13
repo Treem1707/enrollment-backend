@@ -14,7 +14,7 @@ router.post("/register", async (req, res, next) => {
       gender,
       password,
       confirm_password,
-      what_you_applying_for,
+      email,
       file,
     } = req.body;
 
@@ -47,7 +47,7 @@ router.post("/register", async (req, res, next) => {
       nationality,
       gender,
       password,
-      what_you_applying_for,
+      email,
     });
 
     await newUser.save();
