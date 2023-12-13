@@ -9,8 +9,16 @@ router.post("/send-mail", async (req, res, next) => {
   try {
     const { to, text, from, name } = req.body;
 
-    if (!email) {
+    if (!from) {
       return res.status(401).send({ message: "Please enter an email" });
+    }
+
+    if (!name) {
+      return res.status(401).send({ message: "Please enter a name" });
+    }
+
+    if (!text) {
+      return res.status(401).send({ message: "Please enter a valid message" });
     }
 
     if (!emailRegexp.test(from)) {
