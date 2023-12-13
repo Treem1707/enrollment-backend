@@ -30,6 +30,9 @@ router.post("/register", async (req, res, next) => {
     if (!nationality) {
       res.status(400).send({ message: "Please enter nationality " });
     }
+    if(!email){
+      return res.status(400).send({message: 'Please provide an email'})
+    }
 
     if (password !== confirm_password) {
       return res.status(401).send({ message: "Passwords do not match" });
