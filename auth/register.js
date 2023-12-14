@@ -18,6 +18,13 @@ router.post("/register", async (req, res, next) => {
       file,
     } = req.body;
 
+    const user = await User.findOne({ national_id: national_id });
+    if (user) {
+      return res
+        .status(404)
+        .send({ message: "User with id already registered" });
+    }
+
     if (!surname) {
       res.status(400).send({ message: "Please enter surname " });
     }
